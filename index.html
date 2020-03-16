@@ -36,7 +36,7 @@
 		max-height: 100%;
 	}
 	.full-height {
-		min-height: 100%;
+		min-height: 100vh;
 	}
 </style>
 <div id="app" style="padding: 0">
@@ -44,8 +44,8 @@
 		<v-parallax src="https://arithmo.tk/wave.jpg" class="full-height">
 			<v-row align="center" justify="center">
 				<v-col class="text-center" cols="12" style="position: absolute">
-					<h1 class="display-1 font-weight-thin mb-4">Exusiai</h1>
-					<h4 style="font-family: 'Open Sans', sans-serif;" class="subheading">一个
+					<h1 class="display-3 font-weight-thin mb-4">Exusiai</h1>
+					<h4 class="subtitle-1">一个
 						<vue-typer
 								:text='["好看的","易上手的","二次元","功能丰富的"]'
 								:repeat='Infinity'
@@ -138,12 +138,12 @@
 	</v-app>
 </div>
 
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="https://unpkg.com/vuetify/dist/vuetify.js"></script>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+<script src="https://unpkg.com/vuetify/dist/vuetify.min.js"></script>
 <script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js"></script>
 <script>
-    var VueTyperPlugin = window.VueTyper.default;
-    Vue.use(VueTyperPlugin);
+	const VueTyperPlugin = window.VueTyper.default;
+	Vue.use(VueTyperPlugin);
     new Vue({
         el: '#app',
         vuetify: new Vuetify(),
